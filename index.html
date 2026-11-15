@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>here's the moon and the sun</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=DM+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{--navy:#101a31;--navy2:#182440;--wine:#632c3b;--cream:#f1e8dc;--muted:#c5b9b0;--gold:#d7b477}
+*{box-sizing:border-box}html{scroll-behavior:smooth}
+body{margin:0;background:var(--navy);color:var(--cream);font-family:'DM Sans',sans-serif;overflow-x:hidden}
+body:before{content:"";position:fixed;inset:0;pointer-events:none;opacity:.45;background-image:radial-gradient(#fff 1px,transparent 1px),radial-gradient(#d7b477 1px,transparent 1px);background-size:83px 83px,137px 137px;background-position:0 0,38px 60px}
+a{color:inherit}.wrap{width:min(1040px,90%);margin:auto;position:relative}
+nav{display:flex;justify-content:space-between;align-items:center;padding:25px 0;color:var(--muted);font-size:12px;letter-spacing:2px;text-transform:uppercase}
+nav a{text-decoration:none;margin-left:18px}.brand{font-family:'Cormorant Garamond';font-size:20px;letter-spacing:1px;color:var(--cream)}
+.hero{min-height:82vh;display:grid;place-items:center;text-align:center;padding:55px 0}
+.eyebrow{color:var(--gold);letter-spacing:4px;text-transform:uppercase;font-size:10px}
+h1{font:500 clamp(52px,10vw,112px)/.88 'Cormorant Garamond',serif;margin:25px 0 20px;letter-spacing:-2px}
+h1 span{color:var(--gold);font-style:italic}.subtitle{color:var(--muted);font-size:13px;letter-spacing:1px}
+.orbit{width:150px;height:75px;margin:35px auto 0;position:relative}
+.moon{position:absolute;left:20px;top:10px;width:52px;height:52px;border-radius:50%;background:#e8dfd2;box-shadow:0 0 35px #e8dfd255}
+.moon:after{content:"";position:absolute;left:17px;top:-5px;width:52px;height:52px;border-radius:50%;background:var(--navy)}
+.sun{position:absolute;right:20px;top:12px;width:47px;height:47px;border-radius:50%;background:#d8a65f;box-shadow:0 0 35px #d8a65f66}
+section{padding:75px 0;border-top:1px solid #ffffff18}
+.section-kicker{font-size:10px;letter-spacing:4px;text-transform:uppercase;color:var(--gold)}
+h2{font:500 clamp(38px,6vw,60px) 'Cormorant Garamond',serif;margin:10px 0 15px}
+.intro{max-width:620px;color:var(--muted);line-height:1.9;font-size:14px}
+.two-col{display:grid;grid-template-columns:1fr 1fr;gap:22px;margin-top:35px}
+.note{padding:26px;border:1px solid #ffffff20;background:#ffffff08}
+.note h3{font:500 31px 'Cormorant Garamond';margin:0 0 8px}.note p{font-size:13px;color:var(--muted);line-height:1.8;margin:0}
+.gallery{display:grid;grid-template-columns:repeat(4,1fr);gap:17px;margin-top:32px;align-items:start}
+.polaroid{background:#eee5d9;padding:9px 9px 35px;color:#24202a;transform:rotate(var(--tilt));box-shadow:0 12px 30px #0005}
+.polaroid:nth-child(2){margin-top:34px}.polaroid:nth-child(3){margin-top:10px}.polaroid:nth-child(4){margin-top:42px}
+.polaroid img{width:100%;height:290px;object-fit:cover;display:block;filter:saturate(.88)}
+.polaroid figcaption{font:italic 19px 'Cormorant Garamond';text-align:center;padding-top:10px}
+.caption{color:var(--muted);font-size:11px;margin-top:18px}
+.songs{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:30px}
+.song{display:flex;justify-content:space-between;align-items:center;gap:15px;padding:17px 18px;background:#ffffff09;border:1px solid #ffffff1b;text-decoration:none;transition:.2s}
+.song:hover{background:#632c3b66;transform:translateY(-2px)}.song small{display:block;color:var(--muted);font-size:11px;margin-top:4px}.song b{font:500 22px 'Cormorant Garamond'}
+.main-song{border-color:#d7b47777;background:#d7b47712}
+.letter{max-width:690px;margin:30px auto 0;padding:35px;border:1px solid #d7b47766;background:linear-gradient(135deg,#ffffff0b,#632c3b22);font:20px/1.8 'Cormorant Garamond';color:#e9dfd4}
+.letter .sign{color:var(--gold);font-style:italic;text-align:right;margin-top:25px}
+footer{text-align:center;padding:40px 0 55px;color:#9e9291;font-size:10px;letter-spacing:2px}
+@media(max-width:700px){nav{font-size:9px}nav a{margin-left:9px}.two-col,.songs{grid-template-columns:1fr}.gallery{grid-template-columns:repeat(2,1fr);gap:14px}.polaroid img{height:245px}.polaroid:nth-child(2),.polaroid:nth-child(4){margin-top:25px}.hero{min-height:72vh}.letter{padding:24px;font-size:18px}}
+</style>
+</head>
+<body>
+<div class="wrap">
+<nav><div class="brand">m. & s.</div><div><a href="#story">the story</a><a href="#gallery">gallery</a><a href="#playlist">playlist</a></div></nav>
+<header class="hero">
+  <div>
+    <div class="eyebrow">a little universe of its own</div>
+    <h1>here's the <span>moon</span><br>and the sun</h1>
+    <div class="subtitle">january 13 · june 17 · two little constellations</div>
+    <div class="orbit"><div class="moon"></div><div class="sun"></div></div>
+  </div>
+</header>
+
+<section id="story">
+  <div class="section-kicker">01 — the little introduction</div>
+  <h2>two different skies.</h2>
+  <p class="intro">A tiny corner of the internet inspired by a January moon, a June sun, music, football days, and all the little details worth keeping. Just a fan-made scrapbook — a soft place for imagination, not a prediction of real life.</p>
+  <div class="two-col">
+    <article class="note"><h3>the moon · january 13</h3><p>Midnight blue, deep red, quiet thoughts, a little sarcasm, and a head full of plans. The moon keeps her own orbit.</p></article>
+    <article class="note"><h3>the sun · june 17</h3><p>A bright point on the football field, warm afternoon light, and a reminder that every young person gets to write their own story.</p></article>
+  </div>
+</section>
+
+<section id="gallery">
+  <div class="section-kicker">02 — little snapshots</div>
+  <h2>the moon & the sun.</h2>
+  <p class="intro">Four snapshots, arranged like little prints in an old scrapbook.</p>
+  <div class="gallery">
+    <figure class="polaroid" style="--tilt:-2deg"><img src="images/moon-01.jpg" alt="Moon portrait, first photo"><figcaption>moonlight</figcaption></figure>
+    <figure class="polaroid" style="--tilt:2deg"><img src="images/moon-02.jpg" alt="Moon portrait, second photo"><figcaption>january girl</figcaption></figure>
+    <figure class="polaroid" style="--tilt:1.5deg"><img src="images/sun-01.jpg" alt="Sun at football training, first photo"><figcaption>afternoon sun</figcaption></figure>
+    <figure class="polaroid" style="--tilt:-2deg"><img src="images/sun-02.jpg" alt="Sun at football training, second photo"><figcaption>june skies</figcaption></figure>
+  </div>
+  <p class="caption">Personal scrapbook layout. Share or publish photos only with permission and respect for everyone's privacy.</p>
+</section>
+
+<section id="playlist">
+  <div class="section-kicker">03 — songs for this little universe</div>
+  <h2>press play, maybe.</h2>
+  <p class="intro">A soundtrack for late-night tabs, cloudy afternoons, and daydreams.</p>
+  <a class="song main-song" target="_blank" rel="noopener" href="https://open.spotify.com/search/Champagne%20Coast%20Blood%20Orange"><div><b>Champagne Coast</b><small>Blood Orange · main theme</small></div><span>↗</span></a>
+  <div class="songs">
+    <a class="song" target="_blank" rel="noopener" href="https://open.spotify.com/search/Apocalypse%20Cigarettes%20After%20Sex"><div><b>Apocalypse</b><small>Cigarettes After Sex</small></div><span>↗</span></a>
+    <a class="song" target="_blank" rel="noopener" href="https://open.spotify.com/search/Fade%20Into%20You%20Mazzy%20Star"><div><b>Fade Into You</b><small>Mazzy Star</small></div><span>↗</span></a>
+    <a class="song" target="_blank" rel="noopener" href="https://open.spotify.com/search/Innocence%20Avril%20Lavigne"><div><b>Innocence</b><small>Avril Lavigne</small></div><span>↗</span></a>
+    <a class="song" target="_blank" rel="noopener" href="https://open.spotify.com/search/One%20Only%20Pamungkas"><div><b>One Only</b><small>Pamungkas</small></div><span>↗</span></a>
+  </div>
+</section>
+
+<section>
+  <div class="section-kicker">04 — a little note</div>
+  <h2>dear little universe,</h2>
+  <div class="letter">
+    Some things are better kept as songs, photographs, and tiny stories on a page. May the moon keep dreaming big, may the sun keep finding his own path, and may both skies have room to grow into everything they're meant to be.
+    <div class="sign">— from the moon, with a little imagination.</div>
+  </div>
+</section>
+<footer>MADE OF MIDNIGHT BLUE, BURGUNDY & DAYDREAMS · 2026</footer>
+</div>
+</body>
+</html>
